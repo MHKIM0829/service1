@@ -8,7 +8,7 @@ $ mvn clean spring-boot:run
 
 - ### **build**
 
-```cmd
+```
 $ mvn clean install
 ```
 
