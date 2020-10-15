@@ -1,6 +1,6 @@
 # **CF Microservice1**
 
-![](./../eurekaserver/architecture.png)
+![](./architecture.png)
 
 - ### locally test
 ```
