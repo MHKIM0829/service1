@@ -1,5 +1,6 @@
 # **CF Microservice1**
 
+![](./../eurekaserver/architecture.png)
 
 - ### locally test
 ```
