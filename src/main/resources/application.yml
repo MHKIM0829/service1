@@ -3,11 +3,11 @@ spring:
     name: test-service
 
 server:
-    port: ${PORT:8090}
+  port: ${PORT:8080}
 
 eureka:
   instance:
-    hostname: test-service.cfapps.jp10.hana.ondemand.com
+    hostname: test-service.cfapps.eu20.hana.ondemand.com
     prefer-ip-address: false
     # secure-port-enabled: true
     # secure-port: ${server.port}
@@ -15,11 +15,9 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-            # defaultZone: http://${EUREKA_SERVER_NAME:localhost}:${EUREKA_SERVER_PORT:8081}/eureka/
-            # defaultZone: https://zuul-api-gateway.cfapps.jp10.hana.ondemand.com/eureka/
-            # defaultZone: http://${EUREKA_SERVER_NAME:eureka-server}:${EUREKA_SERVER_PORT:8081}/eureka/
-            defaultZone: https://eureka-server.cfapps.jp10.hana.ondemand.com/eureka/
-            enabled: true
+      # defaultZone: http://${EUREKA_SERVER_NAME:localhost}:${EUREKA_SERVER_PORT:8080}/eureka/
+      defaultZone: https://eureka-server.cfapps.eu20.hana.ondemand.com:8080/eureka/
+      enabled: true
 management:
   endpoints:
     web:
